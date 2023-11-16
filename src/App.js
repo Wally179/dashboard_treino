@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./App.css";
+import Sidebar from "./components/sidebar/sidebar";
 
 const App = () => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
@@ -12,7 +13,7 @@ const App = () => {
 
   return (
     <div className="container">
-      <h1>oi</h1>
+      <Sidebar sidebarOpen={sidebarOpen} closeSidebar={closeSidebar} />
     </div>
   );
 };
