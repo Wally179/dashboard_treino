@@ -1,7 +1,7 @@
 import "./sidebar.css";
 import logo from "../../assets/logo.jpg";
 
-const Sidebar = ({ sidebarOpen, openSidebar, closeSidebar }) => {
+const Sidebar = ({ sidebarOpen, closeSidebar }) => {
   return (
     <div className={sidebarOpen ? "sidebar-responsive" : ""} id="sidebar">
       <div className="sidebar__title">
